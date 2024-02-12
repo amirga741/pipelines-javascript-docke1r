@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: amirgapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amirgapipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: amirgapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: amirgapipelinesjavascriptdocker 
+          image: amirtestmic.azurecr.io/amirgapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
