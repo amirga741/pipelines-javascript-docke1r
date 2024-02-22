@@ -20,3 +20,6 @@
       inputs:
         artifactName: 'manifests'
         path: 'manifests'
+- task: ContainerBuild@0
+  inputs:
+    Dockerfile: 'Dockerfile'
