@@ -5,7 +5,7 @@
 trigger:
 - main
 
-resources:
+resources:demo_dev_micro
 - repo: self
 
 variables:
